@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mb-3">BÀI TẬP JS</h2>
+                <nav class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group btn-group-lg" role="group">
+                        <a class="btn btn-primary active" href="#bai1">Bài 1</a>
+                        <a class="btn btn-primary" href="#bai2">Bài 2</a>
+                        <a class="btn btn-primary" href="#bai3">Bài 3</a>
+                        <a class="btn btn-primary" href="#bai4">Bài 4</a>
+                        <a class="btn btn-primary" href="#bai5">Bài 5</a>
+
+                    </div>
+                </nav>
+                <hr class="mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <span class="anchor" id="formLogin"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Tính tiền lương</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" id="bai1" name="formLogin" role="form">
+                                    <div class="form-group">
+                                        <label for="uname1">Điền vào số ngày làm việc</label>
+                                        <input class="form-control" id="ngaylamViec" name="uname1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số tiền lương 1 ngày là : 100 000 vnd</label>
+
+                                    </div>
+                                    <p id="tienLuong" class="py-2 font-weight-bold" style="font-size: 20px"></p>
+                                    <button class="btn btn-success btn-lg float-right" id="btntienLuong"
+                                        type="button">Tính</button>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <span class="anchor" id="bai2"></span>
+                        <hr class="mb-5">
+                        <!-- form card register -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Tính giá trị trung bình 5 số</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" role="form">
+                                    <div class="form-group">
+                                        <label for="inputName">Số 1</label>
+                                        <input class="form-control" id="number1" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3">Số 2</label>
+                                        <input class="form-control" id="number2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3">Số 3</label>
+                                        <input class="form-control" id="number3">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3">Số 4</label>
+                                        <input class="form-control" id="number4">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputVerify3">Số 5</label>
+                                        <input class="form-control" id="number5">
+                                    </div>
+                                    <div class="form-group">
+                                        <p id="ketQua" class="py-2 font-weight-bold" style="font-size: 20px"></p>
+                                        <button class="btn btn-success btn-lg float-right" id="btnketQua"
+                                            type="submit">Tính</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /form card register -->
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <span class="anchor" id="bai3"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Đổi tiền</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" id="bai3" name="formLogin" role="form">
+                                    <div class="form-group">
+                                        <label for="uname1">Điền vào số tiền muốn đổi</label>
+                                        <input class="form-control" id="tienDoi" name="uname1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Giá 1 USD: 23 500 vnd</label>
+
+                                    </div>
+                                    <p id="ketQuaVNĐ" class="py-2 font-weight-bold" style="font-size: 20px"></p>
+                                    <button class="btn btn-success btn-lg float-right" id="btndoiTien"
+                                        type="button">Tính</button>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <span class="anchor" id="bai4"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Tính chu vi diện tích hình chữ nhật</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" id="bai4" name="formLogin" role="form">
+                                    <div class="form-group">
+                                        <label for="uname1">Điền chiều rộng</label>
+                                        <input class="form-control" id="rong" name="uname1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uname1">Điền chiều dài</label>
+                                        <input class="form-control" id="dai" name="uname1">
+                                    </div>
+
+                                    <p id="ketQuadienTich" class="py-2 font-weight-bold" style="font-size: 20px"></p>
+                                    <p id="ketQuachuVi" class="py-2 font-weight-bold" style="font-size: 20px"></p>
+                                    <button class="btn btn-success btn-lg float-right " id="btndienTich" type="button">Diện
+                                        tích</button>
+
+                                    <button class="btn btn-warning btn-lg float-right mr-2" id="btnchuVi"
+                                        type="button">Chu vi</button>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <span class="anchor" id="bai5"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Tổng 2 ký số</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" id="bai5" name="formLogin" role="form">
+                                    <div class="form-group">
+                                        <label for="uname1">Điền vào số muốn tính</label>
+                                        <input class="form-control" id="trungbinhCong" name="uname1">
+                                    </div>
+
+                                    <p id="message" class="text-danger" style="font-size: 20px"></p>
+                                    <p id="ketQuaTong" class="py-2 font-weight-bold text-dark" style="font-size: 20px">
+                                    </p>
+                                    <button class="btn btn-success btn-lg float-right" id="btnSum"
+                                        type="button">Tính</button>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--/col-->
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container-->
+
+
+    <!-- Scroll to Top -->
+    <a id="scroll-to-top" href="#" class="btn btn-primary btn-lg" role="button" title="Return to top of page"
+        data-toggle="tooltip" data-placement="left"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
