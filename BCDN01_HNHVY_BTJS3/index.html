@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=canh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mb-3">BÀI TẬP JS CƠ BẢN</h2>
+                <nav class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group btn-group-lg" role="group">
+                        <a class="btn btn-primary active" href="#bai1">Bài 1</a>
+                        <a class="btn btn-primary" href="#bai2">Bài 2</a>
+                        <a class="btn btn-primary" href="#bai3">Bài 3</a>
+                        <a class="btn btn-primary" href="#bai4">Bài 4</a>
+                       
+
+                    </div>
+                </nav>
+                <hr class="mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <span class="anchor" id="bai1"></span>
+                        <hr class="mb-5">
+                        <!-- form card register -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Xuất 3 số theo thứ tự tăng dần</h3>
+                            </div>
+                            <div class="card-body">
+                                <form autocomplete="off" class="form" role="form">
+                                    <div class="form-group">
+                                        <label for="inputName">Số 1</label>
+                                        <input class="form-control" id="number1" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3">Số 2</label>
+                                        <input class="form-control" id="number2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3">Số 3</label>
+                                        <input class="form-control" id="number3">
+                                    </div>
+                                   
+                                    <div class="form-group">
+                                        <p id="ketQua"></p>
+                                        <button class="btn btn-success mt-4 float-right" id="btnketQua"
+                                            type="button">Kết quả</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /form card register -->
+                    </div>
+                </div>
+              
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <span class="anchor" id="bai2"></span>
+                        <hr class="mb-5">
+                        <!-- form card register -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Gửi lời chào tới gia đình</h3>
+                            </div>
+                            <div class="card-body">
+                                <label for="people">Chọn người trong gia đình : </label>
+                                <select id="select"style="width: 100%" >
+                                  <option id="ai" value="" selected>
+                                    Ai là người sử dụng máy
+                                  </option>
+                                  <option id="bo">Bố</option>
+                                  <option id="me">Mẹ</option>
+                                  <option id="anh">Anh Trai</option>
+                                  <option id="em">Em Gái</option>
+                                </select>
+                                <button type="button" class="btn btn-success mt-4 float-right" id="btnChao">
+                                  Kết quả
+                                </button>
+                                
+                                <div class="mt-4">
+                                  <p id="guiLoiChao">
+                                    
+                                  </p>
+                                </div>
+                            </div>
+                        </div><!-- /form card register -->
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <span class="anchor" id="bai3"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Đếm số chẵn lẻ</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="num1">Số 1:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="num1"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="num2">Số 2:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="num2"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="num3">Số 3:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="num3"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <button type="button" class="btn btn-success float-right" id="btnChanLe">
+                                    Kết quả
+                                  </button>
+                                  <div class="mt-4" >
+                                    <p id="soChanLe">
+                                    </p>
+                                  </div>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <span class="anchor" id="bai4"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0"> Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="canh1">Độ dài cạnh 1:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="canh1"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="canh2">Độ dài cạnh 2:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="canh2"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="canh3">Độ dài cạnh 3:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="canh3"
+                                      placeholder="Nhập số"
+                                    />
+                                  </div>
+                                  <button type="button" class="btn btn-success float-right" id="btnTamGiac">
+                                    Kết quả
+                                  </button>
+                                  <div class="mt-4">
+                                    <p id="ketQuaTamGiac" class="py-2">
+                  
+                                    </p>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+
+               
+                <!--/row-->
+            </div>
+            <!--/col-->
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

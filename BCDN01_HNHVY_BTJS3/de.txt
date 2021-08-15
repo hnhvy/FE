@@ -1,0 +1,9 @@
+1.Cho người dùng nhập vào 3 số nguyên. Viết chương trình xuất 3 số theo thứ tự tăng dần
+2. Viết chương trình “Chào hỏi” các thành viên trong gia đình với các đặc điểm. Đầu tiên máy sẽ
+hỏi ai sử dụng máy. Sau đó dựa vào câu trả lời và đưa ra lời chào phù hợp. Giả sử trong gia
+đình có 4 thành viên: Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)
+3. Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.
+4. Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?
+• Ví dụ: a=2, b=2, c=1 => Tam giác cân
+• a = 3, b=3 c=3 => Tam giác đều
+• a = 3, b = 4, c=5 => Tam giác vuông (đinh lý Pytago)
