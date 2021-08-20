@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body style="">
+  
+    <div class="basic py-3" >
+      <div class="container pt-5" style=" background-image: linear-gradient(0deg, #a1c4fd 0%, #c2e9fb 100%)">
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div
+              class="nav flex-column nav-pills"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#baiTap1"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+                >Bài Tập 1</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#baiTap2"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+                >Bài Tập 2</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-toggle="pill"
+                href="#baiTap3"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+                >Bài Tập 3</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                href="#baiTap4"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+                >Bài tập 4</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <!-- bài tập 1 -->
+              <div
+                class="tab-pane fade show active"
+                id="baiTap1"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <div class="py-1 px-5">
+                  <h2 class="text-dark text-center " style="font-size: 25px;">
+                    QUẢN LÝ TUYỂN SINH
+                  </h2>
+                  <div class="row">
+                  <div class="form-group col-4">
+                    <label for="number1">Nhập điểm chuẩn</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="diemChuan"
+                      placeholder="Nhập số"
+                    />
+                  </div>
+                  <div class="form-group col-4">
+                    <label for="khuVuc"></label>
+                    <select id="khuVuc" class="custom-select mt-2">
+                      <option selected value="-1">Khu vực</option>
+                      <option value="2">A</option>
+                      <option value="1">B</option>
+                      <option value="0.5">C</option>
+                      <option value="0">X</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-4">
+                    <label for="doiTuong"></label>
+                    <select id="doiTuong" class="custom-select mt-2">
+                      <option selected value="-1">Đối tượng</option>
+                      <option value="0">0</option>
+                      <option value="2.5">1</option>
+                      <option value="1.5">2</option>
+                      <option value="1">3</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-4">
+                    <label for="number1">Nhập điểm môn 1:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="mon1"
+                      placeholder="Nhập số"
+                    />
+                  </div>
+                  <div class="form-group col-4">
+                    <label for="number2">Nhập điểm môn 2:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="mon2"
+                      placeholder="Nhập số"
+                    />
+                  </div>
+                  <div class="form-group col-4">
+                    <label for="number3">Nhập điểm môn 3:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="mon3"
+                      placeholder="Nhập số"
+                    />
+                  </div>
+                </div>
+                  <button type="button" class="btn btn-primary" id="btnKetQua">
+                    Kết quả
+                  </button>
+                  <div class="mt-4 bg-white rounded" style="width: 50%">
+                    <p id="tongDiem" class="py-2" style="color: #069bff">
+                      <i class="fas fa-arrow-right"></i></p>
+                    <p id="result" class="py-2" style="color: #069bff">
+                      <i class="fas fa-arrow-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- bài tập 2 -->
+              <div
+                class="tab-pane fade"
+                id="baiTap2"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
+              <div class="py-1 px-5">
+                <h2 class="text-dark text-center mb-4 " style="font-size: 25px;">
+                  TÍNH TIỀN ĐIỆN
+                </h2>
+                <div class="row">
+                <div class="form-group col-6">
+                  <label for="number1">Nhập họ và tên:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="hoTen"
+                    placeholder="Nhập họ và tên"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="number2">Nhập số kw:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="soKW"
+                    placeholder="Nhập số kw"
+                  />
+                </div>
+               
+              </div>
+                <button type="button" class="btn btn-primary" id="btnTinh">
+                  Kết quả
+                </button>
+                <div class="mt-4 bg-white rounded" style="width: 50%">
+                  <p id="tenChuHo" class="py-2" style="color: #069bff">
+                    <i class="fas fa-arrow-right"></i></p>
+                  <p id="tongTien" class="py-2" style="color: #069bff">
+                    <i class="fas fa-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+              </div>
+              <!-- bài tập 3 -->
+              <div
+                class="tab-pane fade"
+                id="baiTap3"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+              >
+              <div
+              class="tab-pane fade show active"
+              id="baiTap1"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <div class="py-1 px-5">
+                <h2 class="text-dark text-center " style="font-size: 25px;">
+                  Tính thuế thu nhập cá nhân
+                </h2>
+                <div class="row">
+                <div class="form-group col-4">
+                  <label for="hoTen">Họ và tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="hovaTen"
+                    placeholder="Nhập họ và tên"
+                  />
+                </div>
+                
+                <div class="form-group col-4">
+                  <label for="tongThuNhap">Nhập tổng thu nhập năm</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="tongThuNhap"
+                    placeholder="Nhập tổng thu nhập năm"
+                  />
+                </div>
+                <div class="form-group col-4">
+                  <label for="nguoiPhuThuoc">Nhập số người phụ thuộc</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="nguoiPhuThuoc"
+                    placeholder="Nhập số người phụ thuộc"
+                  />
+                </div>
+               
+              </div>
+                <button type="button" class="btn btn-primary" id="btnTienThue">
+                  Kết quả
+                </button>
+                <div class="mt-4 bg-white rounded" style="width: 50%">
+                  <p id="thue" class="py-2" style="color: #069bff">
+                    <i class="fas fa-arrow-right"></i></p>
+
+                </div>
+              </div>
+            </div>
+              </div>
+              <!-- bài tập 4 -->
+              <div
+                class="tab-pane fade"
+                id="baiTap4"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+              >
+              <div
+              class="tab-pane fade show active"
+              id="baiTap1"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <div class="py-1 px-5">
+                <h2 class="text-dark text-center " style="font-size: 25px;">
+                  Tính tiền cáp
+                </h2>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label for="loaiKH">Loại khách hàng</label>
+                    <select id="loaiKH" class="custom-select mt-2" onchange="hienThiDN()">
+                      <option selected value="">Chọn loại khách hàng</option>
+                      <option value="nd">Nhà Dân </option>
+                      <option value="dn">Doanh nghiệp</option>
+                    </select>
+                  </div>
+                
+                <div class="form-group col-4">
+                  <label for="maKh">Mã khách hàng</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="maKH"
+                    placeholder="Nhập mã khách hàng"
+                  />
+                </div>
+                
+                <div class="form-group col-4">
+                  <label for="number1">Số kênh cao cấp:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="kenhCaoCap"
+                    placeholder="Nhập số"
+                  />
+                </div>
+                <div class="form-group col-4" id="active" style="display: none">
+                  <label for="soKetNoi">Số kết nối:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="soKetNoi"
+                    placeholder="Nhập số"
+                  />
+                </div>
+              
+              </div>
+                <button type="button" class="btn btn-primary" id="btnTienCap">
+                  Kết quả
+                </button>
+                <div class="mt-4 bg-white rounded" style="width: 50%">
+                  <p id="tienCap" class="py-2" style="color: #069bff">
+                    <i class="fas fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+   
+    <!-- javascript -->
+    <!-- cơ bản -->
+    <script src="js/BaiTap1.js"></script>
+    <script src="js/Baitap2.js"></script>
+    <script src="js/BaiTap3.js"></script>
+    <script src="js/Baitap4.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
