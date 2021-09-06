@@ -214,19 +214,3 @@ function searchXL() {
 }
 getELE('btnTimNV').onclick = searchXL
 
-//hàm oninput
-function handleOn() {
-  let messages = document.querySelectorAll('.sp-thongbao')
-  messages.forEach(message => {
-    let forms = document.querySelectorAll('.form-control')
-    forms.forEach((form) => {
-      if (message) {
-        form.addEventListener('input', function () {
-          message.innerHTML = ''
-        })
-      }
-    }
-    )
-  })
-}
-handleOn()
