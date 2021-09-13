@@ -213,7 +213,3 @@ function searchXL() {
   hienThiTable(result)
 }
 getELE('btnTimNV').onclick = searchXL
-<<<<<<< HEAD
-
-=======
->>>>>>> 3392f9c (Axios_init)
