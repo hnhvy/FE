@@ -1,0 +1,17 @@
+@media screen and (min-width: 375px) {
+  .sectionBanner {
+    text-align: center;
+  }
+  .bannerTitle {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 600px) {
+  .bannerTitle {
+    font-size: 5rem;
+  }
+  .sectionBanner {
+    text-align: left;
+  }
+}
