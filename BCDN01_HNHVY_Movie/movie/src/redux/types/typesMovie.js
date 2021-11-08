@@ -1,0 +1,2 @@
+export const BOOKING_CHAIR = 'BOOKING_CHAIR'
+export const DELETE_CHAIR = 'DELETE_CHAIR '
